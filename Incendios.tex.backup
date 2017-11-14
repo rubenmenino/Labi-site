@@ -8,7 +8,7 @@
 
 %\pagestyle{}
 
-\setromanfont[Mapping=tex-text]{Linux Libertine O}
+%\setromanfont[Mapping=tex-text]{Linux Libertine O}
 % \setsansfont[Mapping=tex-text]{DejaVu Sans}
 % \setmonofont[Mapping=tex-text]{DejaVu Sans Mono}
 
@@ -118,12 +118,12 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 \begin{table}
 \begin{tabular}{|c||c||c|}
 \hline
-Concentraçao lixivia(\%)     &  1 litro  &  2 litros  \\
-	1\%		     & 	4 gotas	 &  8 gotas   \\
-	2\%		     &	2 gotas	 &  4 gotas   \\
-	4\%		     & 	1 gota	 &  2 gotas   \\
-	8\%		     &     -     &  1 gota    \\
-	10\%		     &     -     &  1 gota    \\ \hline
+\textbf{Concentraçao lixívia(\%)}     &  \textbf{1 litro}  &  \textbf{2 litros}  \\ \hline
+	\textbf{1\%}		      &  4 gotas	   &  8 gotas   \\ \hline
+	\textbf{2\%}		      &	 2 gotas	   &  4 gotas   \\ \hline
+	\textbf{4\%}		      &  1 gota	     	   &  2 gotas   \\ \hline
+	\textbf{8\%}		      &     -    	   &  1 gota    \\ \hline
+	\textbf{10\%}		      &     -    	   &  1 gota    \\ \hline
 
 	
 \end{tabular}
@@ -133,7 +133,7 @@ Concentraçao lixivia(\%)     &  1 litro  &  2 litros  \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Apoios a população apos incêndios}
+\section{Apoios a população após incêndios}
 
 \begin{enumerate}
  \item Ministério da Justiça
@@ -176,7 +176,7 @@ Podemos dividir as queimaduras em 3 graus distintos como podemos observar na tab
 
 \begin{tabular}{|l||c||r|}
 \hline 
-	1ºGrau	  		&	2ºGrau	      & 	3ªGrau
+	1ºGrau	  		&	2ºGrau	      & 	3ªGrau \\
 				&  1 litro           &  2 litros  \\
 	1\%		   	& 	4 gotas	    &  8 gotas   \\
 	2\%		    	&	2 gotas	     &  4 gotas   \\
