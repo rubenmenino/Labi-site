@@ -1,29 +1,28 @@
-\documentclass[a4paper,11pt]{article}
-
-\usepackage[english,portuguese]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[a4paper,11pt]{report}
+\usepackage[english,portuguese]{babel} %Usar língua portuguesa
+\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[T1]{fontenc} % Fontes T1
+%\usepackage{graphicx}
 %\usepackage[latin1]{inputenc}
 %\usepackage{incendios}
 
 %\pagestyle{}
 
-%\setromanfont[Mapping=tex-text]{Linux Libertine O}
-% \setsansfont[Mapping=tex-text]{DejaVu Sans}
-% \setmonofont[Mapping=tex-text]{DejaVu Sans Mono}
 
 \title{Incendios}
-\author{Renato Lima Valente \\Ruben Miguel Paulo Menino}
+\author{Renato Valente, Ruben Menino}
 \date{\today}
 
 \begin{document}
 \maketitle
+\tableofcontents
+%\pagestyle{plain}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Abreviaturas de Siglas}
-
-\begin{description}
+\part{Abreviaturas de Siglas}
+ \begin{description}
  \item [G.N.R]- Guarda Nacional Republicana
  \item [ICNF] - Instituto de Conservação da Natureza e das Florestas
  \item [CO] - monóxido de carbono
@@ -34,11 +33,12 @@
  \item [NO2] - dióxido de nitrogénio
  \item [O3] - ozono DGS- Direção Geral de Saúde
  \item [LNES] - Linha Nacional de Emergência Social
-\end{description}
+ \end{description}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introdução}
+\part{Introdução}
+
 Este trabalho foi realizado no âmbito da unidade curricular Laboratórios de Informática, esta que é lecionado pelo Professor Paulo Barraca. Foi solicitado à turma a elaboração de grupos para posteriormente se proceder à realização de um trabalho. O tema escolhido pelo nosso grupo foi “Incêndios”.
 Na elaboração deste trabalho pretende-se que seja recolhido o máximo de informação credível e pertinente.
 Sendo assim, podemos definir como principais objetivos: adquirir conhecimentos relativamente ao tema em questão; elaborar estratégias de modo a processar a informação para que seja facilmente percetível e compreensível ao leitor; Ter conhecimentos dos riscos para a saúde associados ao fumo produzido pelos incêndios, dos problemas relacionados com o excesso de calor, dos problemas relacionados com as falhas no abastecimento de água, apoios à população após incêndios e prevenção de incêndios.
@@ -46,12 +46,12 @@ A informação foi inserida neste documento de uma forma sequencial e lógica pa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Dados estatísticos relacionados nos incêndios}
+\part{Dados estatísticos relacionados nos incêndios}
 Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e G.N.R.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Prevenção de Incêndios}
+\part{Prevenção de Incêndios}
 A cada ano que decorre o número de incêndios em Portugal é cada vez mais frequente, é importante desta forma apostar recursos na prevenção dos mesmos. A intervenção do homem na prevenção é essencial de modo a evitar a origem dos incêndios bem como evitar o desenvolvimento dos mesmos. Segundo a Proteção Civil existem algumas situações em que é necessária uma maior prevenção por parte da população, de modo a diminuir a incidência dos incêndios:
 \begin{enumerate}
  \item Queimadas
@@ -71,14 +71,14 @@ A Proteção Civil salienta a importância dos cuidados a ter na realização da
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Riscos para a saúde resultantes dos incêndios}
+\part{Riscos para a saúde resultantes dos incêndios}
 Os incêndios florestais são considerados catástrofes ambientais. Estas catástrofes são responsáveis por prejuízos económicos e ambientais acrescidos, mas acima de tudo constituem um risco para todas as populações e para a saúde das mesmas.
 
-\subsubsection{Riscos para a saúde resultantes da ocorrência de incêndios}
+\chapter{Riscos para a saúde resultantes da ocorrência de incêndios}
 
 Os incêndios florestais são considerados catástrofes ambientais. Estas catástrofes são responsáveis por prejuízos económicos e ambientais acrescidos, mas acima de tudo constituem um risco para todas as populações e para a saúde das mesmas.
 
-\subsubsection{Riscos para a saúde associados ao fumo produzido pelos incêndios}
+\chapter{Riscos para a saúde associados ao fumo produzido pelos incêndios}
 Ao analisar os componentes tóxicos presentes no fumo verificamos que estes dependem na sua grande maioria dos materiais envolvidos e se estes ardem completamente, ou se apenas são derretidos. Também a presença de vento e a sua direção pode ajudar ou não a combustão completa e também a disseminação das partículas a grande distância.
  Averiguando a constituição do fumo libertado nos incêndios, observamos que este é constituído por vapor de água, por monóxido de carbono (CO), óxido nítrico (NO3), dióxido de carbono (CO2), compostos orgânicos voláteis irritantes (COV) (tóxicos do ar e partículas muito pequenas: PM2,5 e PM10).
 Relativamente aos gases verificamos que, quanto ao monóxido de carbono (CO), tem a capacidade de penetrar rapidamente na corrente sanguínea através dos pulmões e de se combinar irreversivelmente com a hemoglobina, substância responsável pelo transporte do oxigénio para os tecidos humanos. Para aqueles que sofrem de doenças cardiovasculares o perigo é muito mais sério, pois em níveis elevados de CO, poderá levar a dores de cabeça, tonturas, perturbações da visão, redução da capacidade de trabalho e diminuição da destreza manual.
@@ -89,40 +89,31 @@ Por outro, a principal ameaça para a saúde resultante do fumo provém das part
 Segundo a DGS é importante informar a população relativamente aos riscos associados á exposição de fumos e assim lançar medidas de prevenção. Como resposta, a direção geral de saúde lançou um comunicado no dia 17/08/2017 que foca em alguns pontos essenciais. Desta forma, a DGS recomenda á população que evite a exposição ao fumo, evitando atividades a ar livre, salienta a importância da utilização de máscaras, sempre que for inevitável a exposição ao fumo, toma continua da medicação habitual para doentes com problemas a nível respiratório e manter-se hidratado e informado [ CITATION Fra17 \l 2070 ].
 
 
-\subsubsection{Problemas relacionados com o excesso de calor}
+\chapter{Problemas relacionados com o excesso de calor}
 Como sabemos, verifica-se um maior número de incêndios durante os meses do verão, estes que são também característicos pelo facto de levarem à existência de um aumento da temperatura. Este aumento da temperatura que se verifica no verão em conjunto com o calor provocado pela ocorrência de incêndios leva à existência de problemas de saúde pública associados a essa situação.
 Apesar de todos os indivíduos possam ser afetados com o excesso de calor que se pode fazer sentir devido à ocorrência de incêndios, existem alguns grupos populacionais que estão mais sujeitos aos efeitos provocados por esse excesso de calor, são estes: “As crianças nos primeiros anos de vida, as pessoas idosas e os portadores de doenças crónicas, nomeadamente os que sofrem de afeções cardíacas, respiratórias, renais, diabetes, obesidade e doença mental” (DGS,2011).
 O excessivo calor que se pode fazer sentir quando estamos perante situações de incêndios, poderão levar há ocorrência de problemas considerados como “Emergências Médicas”. Sendo assim, as emergências médicas que poderão ser desencadeadas devido ao calor excessivo são:
 
-\item Cãimbras
-
 \begin{itemize}
-\item  Caso a pessoa, que tenha estado sujeita a elevadas temperaturas, comece a ter cãibras, deverá: afastar-se da causa que está a provocar o aumento da temperatura, e de seguida procurar um sitio mais fresco, arejado e calmo. Deve também promover uma boa hidratação. Se as cãibras não passarem ao fim de uma hora, deverá dirigir-se a uma unidade de cuidados de saúde (DGS,2011).
-\end{itemize}
-
-\item Golpe de calor
-\begin{itemize}
-
-
+\item (Cãimbras) Caso a pessoa, que tenha estado sujeita a elevadas temperaturas, comece a ter cãibras, deverá: afastar-se da causa que está a provocar o aumento da temperatura, e de seguida procurar um sitio mais fresco, arejado e calmo. Deve também promover uma boa hidratação. Se as cãibras não passarem ao fim de uma hora, deverá dirigir-se a uma unidade de cuidados de saúde (DGS,2011).
 \item (Golpe de calor) O golpe de calor é considerado uma emergência médica, pelo facto de se caraterizar pela incapacidade de o corpo humano não conseguir controlar a sua própria temperatura, levando a elevações de temperatura de tal forma extremas que podem desencadear deficiências crónicas ou mesmo a morte. O corpo não consegue regular a temperatura corporal pelo facto de ser perdida a capacidade de sudação. As temperaturas poderão atingir mesmo os 39ºC em 10 a 15 minutos.
 Em caso de presença dos sintomas anteriormente referidos deverá: “Procurar ajuda numa unidade de cuidados de saúde, com o objetivo de arranjar mecanismos para diminuir a temperatura corporal; Procurar um local mais fresco e usar meios para arrefecimento natural, tais como banho de agua fria ou tépida; Se ocorrerem contrações corporais, não devem ser administrados líquidos e deverá prevenir-se que a pessoa se magoe;” (DGS,2011).
 \item (Esgotamento devido ao calor) O esgotamento provocado pelo excesso de calor, deve-se ao facto de haver uma excessiva perda de líquidos e sódio pela sudação, e é um problema que poderá ser mesmo fatal em idosos e pessoas que sofram de hipertensão arterial.
 Caso se verifique a ocorrência destes sintomas, a pessoa deverá: “Procurar ajuda numa unidade de cuidados de saúde o mais rapidamente possível. Caso a pessoa sofra de problemas cardíacos ou hipertensão é necessário que a procura de ajuda médica imediata; Enquanto se espera pela prestação de cuidados de saúde, deverá ser feito arrefecimento, promover a hidratação da pessoa e o seu repouso;” (DGS,2011).
 \end{itemize}
 
-
-\subsection{Problemas relacionados com as falhas no abastecimento de água}
+\chapter{Problemas relacionados com as falhas no abastecimento de água}
 A água é um bem essencial e imprescindível na nossa vida, seja para consumo próprio ou para evitar a devastação da nossa floresta. Com a chegada dos incêndios chegam também os problemas no abastecimento de água. 
 Por vezes, ocorrem alterações na qualidade da água devido aos incêndios e ao efeito que eles provocam no meio ambiente. Dessa forma, é necessário recorrer a outros meios de abastecimento, os chamados meios alternativos, com o objetivo de não colocar em risco a saúde das pessoas que estão envolvidos neste fenómeno ambiental. A passagem facilitada da água para o subsolo devido à perda de vegetação, consequente dos incêndios, levará a um conjunto de transformações químicas, como a entrada de sedimentos e cinzas nos fluxos de água, que a irão tornar imprópria para o consumo da população e constituir um grande risco para a saúde pública.
 De forma preventiva, é necessário elaborar um conjunto de medidas alternativas às habituais, com o objetivo de contornar/reduzir os riscos para a saúde humana  (DGS,2011).
 
 
-\subsubsection{Protocolos de desinfeção da água - Medidas a incrementar}
+\section{Protocolos de desinfeção da água - Medidas a incrementar}
 
-\subsubsubsection{Fervura de água destinada a consumo humano}
+\subsection{Fervura de água destinada a consumo humano}
 Grande parte dos microrganismos patogénicos e prejudiciais para a saúde do Homem não conseguem sobreviver e proliferar em ambientes com altas temperaturas. Assim, a fervura da água contaminada é um método executado muito frequentemente e que é bastante eficiente na eliminação de bactérias, fungos, parasitas, entre outras. De seguida a água deverá ser armazenada num recipiente fechado e colocada num ambiente fresco(DGS,2011).
 
-\subsubsubsection{Desinfeção Química}
+\subsection{Desinfeção Química}
 A desinfeção da água é executada através de produtos à base de cloro e iodo. Normalmente, é utilizada uma lixivia comercial à escolha do consumidor para uma desinfeção adequada, desde que não contenha corantes, nem qualquer tipo de detergentes. 
 \begin{table}
 \begin{tabular}{|c||c||c|}
@@ -133,8 +124,6 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 	\textbf{4\%}		      &  1 gota	     	   &  2 gotas   \\ \hline
 	\textbf{8\%}		      &     -    	   &  1 gota    \\ \hline
 	\textbf{10\%}		      &     -    	   &  1 gota    \\ \hline
-
-	
 \end{tabular}
 \caption{Uso doméstico de lixivias comerciais de acordo com a concentração de hipoclorito sódio e da quantidade de água.}
 \end{table}
@@ -142,7 +131,7 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Apoios a população após incêndios}
+\part{Apoios a população após incêndios}
 
 \begin{enumerate}
  \item Ministério da Justiça
@@ -177,26 +166,37 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\section{Tipos de Queimaduras} 
-Podem surgir vários tipos de queimaduras provenientes do contacto do fogo com a pele. 
-Qquanto maior o tempo de contacto maior será a profundidade da queimadura. 
-Podemos dividir as queimaduras em 3 graus distintos como podemos observar na tabela 2.
+\part{Tipos de Queimaduras} 
+Durate os incêndios, as pessoas que os cambatem, quer seja bombeiro ou civil,  estam sujeitas ao contacto da chama com a pele, podendo provocar queimaduras de diferentes graus.
+As queimaduras classificam-se de acordo com a sua profundidade e o tamanho destas.
+Na tabela 2 podemos observar os diferentes graus de queimaduras.
 
-
-\begin{tabular}{|l||c||r|}
-\hline 
-	1ºGrau	  		&	2ºGrau	      & 	3ªGrau \\
-				&  1 litro           &  2 litros  \\
-	1\%		   	& 	4 gotas	    &  8 gotas   \\
-	2\%		    	&	2 gotas	     &  4 gotas   \\
-	4\%		        & 	1 gota	   &  2 gotas   \\
-	8\%		        &     -              &  1 gota    \\
-	10\%		        &     -            &  1 gota    \\
+\begin{table}
+\begin{tabular}{|c||c||c|}
+\hline  
+   \textbf{1ºGrau}	  	&  \textbf{2ºGrau}	  &  \textbf{3ªGrau}		 \\  \hline
+   Atinge a epiderme		&  Atinge a derme         &  Destruição dos tecidos \\  \hline
+   Causa Vermelhidão da pele   	&  Ardor intenso	  &  Nesseçário apoio médico \\  \hline
+   Não há formação de bolhas    &  Há formação de bolhas  &  A pele fica carbonizada \\  \hline
 \end{tabular}
- 
+\caption{Características das queimaduras}
+\end{table}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\section{Reflexão crítica}
+\part{Reflexão crítica}
+Sendo Portugal o país europeu com mais área ardida na última década, verificou-se este ano a época mais crítica de incêndios florestais no nosso país, sendo que mais de 230 mil hectares de área arderam.
+Durante esta época de incêndios abordou-se bastante as falhas no funcionamento do Sistema Integrado de Redes de Emergência e Segurança de Portugal, que começaram no incêndio de Pedrógão Grande e repetiram-se, pelo menos, nos fogos de Alijó, Abrantes, Mealhada, Cantanhede e no distrito de Castelo Branco.
+O nosso grupo tem por opinião, que para que seja alterado a tendência de aumento das áreas ardidas serão necessárias medidas a longo-prazo, onde estas só irão ter sucesso se forem assumidas por todos, enquanto objetivo estratégico do desenvolvimento global do país.
+Para além das boas medidas de política, existe também a necessidade de envolvimento dos cidadãos, mais particularmente, das populações, seguindo-se de um esforço de esclarecimento e mobilização.
+Consideramos ainda, que é imprescindível a adoção de um Plano Nacional de Defesa da Floresta Contra Incêndios.
+Por fim, tendo em conta a quantidade de pessoas lesadas tanto direta como indiretamente devido aos incêndios, a quantidade de mortes que ocorreram, de bens que foram perdidos devido às chamas, gostaríamos então de apelar a uma planificação de estratégias com vista a diminuir a quantidade de incêndios que ocorrem. 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Conclusão}
 
 
 
@@ -204,16 +204,9 @@ Podemos dividir as queimaduras em 3 graus distintos como podemos observar na tab
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Conclusão}
+\part{Bibliografia}
 
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Bibliografia}
-
-Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e G.N.R.
 
 \end{document}
