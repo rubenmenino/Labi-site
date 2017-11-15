@@ -2,21 +2,82 @@
 \usepackage[english,portuguese]{babel} %Usar língua portuguesa
 \usepackage[utf8]{inputenc} % Input UTF8
 \usepackage[T1]{fontenc} % Fontes T1
-%\usepackage{graphicx}
+\usepackage{graphicx}
 %\usepackage[latin1]{inputenc}
 %\usepackage{incendios}
 
 %\pagestyle{}
 
 
-\title{Incendios}
-\author{Renato Valente, Ruben Menino}
-\date{\today}
+%%
+% Definições %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\def\titulo{Incêndios}
+\def\data{\today}
+\def\autores{Renato Valente, Ruben Miguel}
+\def\autorescontactos{(89077)renatovalente5@ua.pt, (89185)ruben.menino@ua.pt}
+\def\versao{V1.0}
+\def\departamento{DETI - Universidade de Aveiro}
+\def\empresa{Universidade de Aveiro}
+
 
 \begin{document}
+
+%
+%% CAPA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{titlepage}
+
+\begin{center}
+%
+\vspace*{50mm}
+%
+{\Huge \titulo}\\ 
+%
+\vspace{10mm}
+%
+{\LARGE \autores}\\ 
+%
+%
+\vspace{30mm}
+%
+\begin{figure}[h]
+\center
+\includegraphics{ua.pdf}
+\end{figure}
+%
+\vspace{30mm}
+\end{center}
+%
+\begin{flushright}
+\versao
+\end{flushright}
+\end{titlepage}
+
+%
+%
+%%  Página de Título %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\title{%
+{\Huge\textbf{\titulo}}\\
+{\Large \departamento\\}
+}
+%
+\author{%
+    \autores \\
+    \autorescontactos
+}
+%
+\date{\data}
+%
 \maketitle
-\tableofcontents
-%\pagestyle{plain}
+
+\clearpage
+
+
+%\maketitle
+%\tableofcontents
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
