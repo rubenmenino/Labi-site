@@ -1,8 +1,10 @@
 \documentclass[a4paper,11pt]{report}
 \usepackage[english,portuguese]{babel} %Usar língua portuguesa
-\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[utf8]{inputenc}% Input UTF8
+%\usepackage[backend=biber, style=ieee]{biblatex}
 \usepackage[T1]{fontenc} % Fontes T1
 \usepackage{graphicx}
+\bibliography{bibfile}
 %\usepackage[latin1]{inputenc}
 %\usepackage{incendios}
 
@@ -76,8 +78,8 @@
 \clearpage
 
 
-%\maketitle
-%\tableofcontents
+\maketitle
+\tableofcontents
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,7 +221,7 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
   
  \end{itemize}
  
-  \item Criação Linha Nacional de Emergência Social (LNES)
+ \item Criação Linha Nacional de Emergência Social (LNES)
   Esta linha, acessível através do número 144, foi desenvolvida em articulação entre os Ministérios da Justiça, Trabalho Solidariedade e Segurança Social e Saúde. Tendo por base que o “Cidadão deve encontrar um ponto de contacto e resposta imediata à sua exposição com o agendamento de uma data/hora para se deslocar a um serviço da sua conveniência, onde o aguardam técnicos habilitados para a resolução do problema específico identificado na triagem telefónica” (Republica Portuguesa, 2017). Permitindo assim, às populações poderem obter acompanhamento social, subsídios eventuais, encaminhamento para resposta social, prestações sociais ou apoios sociais específicos, apoio psicológico e encaminhamento para cuidados de saúde (Republica Portuguesa, 2017).
 
 
@@ -232,8 +234,8 @@ Durate os incêndios, as pessoas que os cambatem, quer seja bombeiro ou civil,  
 As queimaduras classificam-se de acordo com a sua profundidade e o tamanho destas.
 Na tabela 2 podemos observar os diferentes graus de queimaduras.
 
-\begin{table}
-\begin{tabular}{|c||c||c|}
+ \begin{table}
+ \begin{tabular}{|c||c||c|}
 \hline  
    \textbf{1ºGrau}	  	&  \textbf{2ºGrau}	  &  \textbf{3ªGrau}		 \\  \hline
    Atinge a epiderme		&  Atinge a derme         &  Destruição dos tecidos \\  \hline
@@ -268,6 +270,6 @@ Por fim, tendo em conta a quantidade de pessoas lesadas tanto direta como indire
 \part{Bibliografia}
 
 
-
+\printbibliography
 
 \end{document}
