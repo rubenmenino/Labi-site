@@ -1,32 +1,31 @@
-\documentclass[a4paper,11pt]{report}
-\usepackage[english,portuguese]{babel} %Usar língua portuguesa
-\usepackage[utf8]{inputenc}% Input UTF8
-%\usepackage[backend=biber, style=ieee]{biblatex}
+\documentclass{report}
 \usepackage[T1]{fontenc} % Fontes T1
+\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[backend=biber, style=ieee]{biblatex} % para usar bibliografia
+\usepackage{csquotes}
+\usepackage[portuguese]{babel} %Usar língua portuguesa
+\usepackage{blindtext} % Gerar texto automaticamente
+\usepackage[printonlyused]{acronym}
+\usepackage{hyperref} % para autoref
 \usepackage{graphicx}
-\bibliography{bibfile}
-%\usepackage[latin1]{inputenc}
-%\usepackage{incendios}
 
-%\pagestyle{}
-
-
-%%
-% Definições %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\def\titulo{Incêndios}
-\def\data{\today}
-\def\autores{Renato Valente, Ruben Miguel}
-\def\autorescontactos{(89077)renatovalente5@ua.pt, (89185)ruben.menino@ua.pt}
-\def\versao{V1.0}
-\def\departamento{DETI - Universidade de Aveiro}
-\def\empresa{Universidade de Aveiro}
+\bibliography{bibliografia}
 
 
 \begin{document}
-
+%%
+% Definições
 %
-%% CAPA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\titulo{Incêndios}
+\def\data{\today}
+\def\autores{Renato Valente, Ruben Menino}
+\def\autorescontactos{(89077) renatovalente5@ua.pt, (89185) ruben.menino@ua.pt}
+\def\versao{V1.0}
+\def\departamento{DEPARTAMENTO}
+\def\empresa{DETI - Universidade de Aveiro}
+\def\logotipo{ua.pdf}
+%
+%%%%%% CAPA %%%%%%
 %
 \begin{titlepage}
 
@@ -38,14 +37,17 @@
 %
 \vspace{10mm}
 %
-{\LARGE \autores}\\ 
+{\Large \empresa}\\
 %
+\vspace{10mm}
+%
+{\LARGE \autores}\\ 
 %
 \vspace{30mm}
 %
 \begin{figure}[h]
 \center
-\includegraphics{ua.pdf}
+\includegraphics{\logotipo}
 \end{figure}
 %
 \vspace{30mm}
@@ -56,14 +58,10 @@
 \end{flushright}
 \end{titlepage}
 
-%
-%
-%%  Página de Título %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%
+%%  Página de Título %%
 \title{%
 {\Huge\textbf{\titulo}}\\
-{\Large \departamento\\}
+{\Large \departamento\\ \empresa}
 }
 %
 \author{%
@@ -75,11 +73,7 @@
 %
 \maketitle
 
-\clearpage
-
-
-\maketitle
-\tableofcontents
+\pagenumbering{roman}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,7 +254,9 @@ Por fim, tendo em conta a quantidade de pessoas lesadas tanto direta como indire
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \part{Conclusão}
-
+Hoje em dia cada vez podemos observar com maior frequência a ocorrência de incêndios, onde uma considerável percentagem seja por responsabilidade das pessoas. Verificando assim que o Ser Humano acaba por se prejudicar a si próprio e aos seus chegados. Isto contando com todos os efeitos precedentes dos incêndios, tanto físicos para quem os combate e por quem é “rodeado” por estes, como também psicológicos para quem perde um próximo, para quem perde pertences como as suas casas ou até mesmo só pelas imagens que são capturadas tanto ao vivo como pela comunicação social.
+Posto isto, é importante salientar e consequentemente alertar a população afetada sobre os riscos para a saúde derivados destas catástrofes. Prevenindo assim, a ocorrência de complicações com a diminuição da recorrência a unidades de saúde. Não pondo de parte a importância da ajuda necessária às populações que acabam por ser envolvidas e prejudicadas por este fenómeno.
+Em suma, os objetivos definidos neste trabalho foram alcançados com sucesso, podendo o grupo reter informação deste fenómeno ambiental e consciencializando-se um pouco mais da realidade que são os incêndios, os seus riscos e as suas consequências devastadoras.
 
 
 
@@ -268,7 +264,6 @@ Por fim, tendo em conta a quantidade de pessoas lesadas tanto direta como indire
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \part{Bibliografia}
-
 
 \printbibliography
 
