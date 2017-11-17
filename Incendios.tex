@@ -1,7 +1,9 @@
 \documentclass{report}
+
 \usepackage[T1]{fontenc} % Fontes T1
 \usepackage[utf8]{inputenc} % Input UTF8
 \usepackage[backend=biber, style=ieee]{biblatex} % para usar bibliografia
+\usepackage{SIunits}
 \usepackage{csquotes}
 \usepackage[portuguese]{babel} %Usar língua portuguesa
 \usepackage{blindtext} % Gerar texto automaticamente
@@ -78,7 +80,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Abreviaturas de Siglas}
+\chapter{Abreviaturas de Siglas}
+
  \begin{description}
  \item [G.N.R]- Guarda Nacional Republicana
  \item [ICNF] - Instituto de Conservação da Natureza e das Florestas
@@ -94,7 +97,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Introdução}
+\chapter{Introdução}
+\cite{dgsfumos}
 
 Este trabalho foi realizado no âmbito da unidade curricular Laboratórios de Informática, esta que é lecionado pelo Professor Paulo Barraca. Foi solicitado à turma a elaboração de grupos para posteriormente se proceder à realização de um trabalho. O tema escolhido pelo nosso grupo foi “Incêndios”.
 Na elaboração deste trabalho pretende-se que seja recolhido o máximo de informação credível e pertinente.
@@ -103,12 +107,12 @@ A informação foi inserida neste documento de uma forma sequencial e lógica pa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Dados estatísticos relacionados nos incêndios}
+\chapter{Dados estatísticos relacionados nos incêndios}
 Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e G.N.R.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Prevenção de Incêndios}
+\chapter{Prevenção de Incêndios}
 A cada ano que decorre o número de incêndios em Portugal é cada vez mais frequente, é importante desta forma apostar recursos na prevenção dos mesmos. A intervenção do homem na prevenção é essencial de modo a evitar a origem dos incêndios bem como evitar o desenvolvimento dos mesmos. Segundo a Proteção Civil existem algumas situações em que é necessária uma maior prevenção por parte da população, de modo a diminuir a incidência dos incêndios:
 \begin{enumerate}
  \item Queimadas
@@ -128,25 +132,25 @@ A Proteção Civil salienta a importância dos cuidados a ter na realização da
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Riscos para a saúde resultantes dos incêndios}
+\chapter{Riscos para a saúde resultantes dos incêndios}
 Os incêndios florestais são considerados catástrofes ambientais. Estas catástrofes são responsáveis por prejuízos económicos e ambientais acrescidos, mas acima de tudo constituem um risco para todas as populações e para a saúde das mesmas.
 
-\chapter{Riscos para a saúde resultantes da ocorrência de incêndios}
+\section{Riscos para a saúde resultantes da ocorrência de incêndios}
 
 Os incêndios florestais são considerados catástrofes ambientais. Estas catástrofes são responsáveis por prejuízos económicos e ambientais acrescidos, mas acima de tudo constituem um risco para todas as populações e para a saúde das mesmas.
 
-\chapter{Riscos para a saúde associados ao fumo produzido pelos incêndios}
+\section{Riscos para a saúde associados ao fumo produzido pelos incêndios}
 Ao analisar os componentes tóxicos presentes no fumo verificamos que estes dependem na sua grande maioria dos materiais envolvidos e se estes ardem completamente, ou se apenas são derretidos. Também a presença de vento e a sua direção pode ajudar ou não a combustão completa e também a disseminação das partículas a grande distância.
  Averiguando a constituição do fumo libertado nos incêndios, observamos que este é constituído por vapor de água, por monóxido de carbono (CO), óxido nítrico (NO3), dióxido de carbono (CO2), compostos orgânicos voláteis irritantes (COV) (tóxicos do ar e partículas muito pequenas: PM2,5 e PM10).
 Relativamente aos gases verificamos que, quanto ao monóxido de carbono (CO), tem a capacidade de penetrar rapidamente na corrente sanguínea através dos pulmões e de se combinar irreversivelmente com a hemoglobina, substância responsável pelo transporte do oxigénio para os tecidos humanos. Para aqueles que sofrem de doenças cardiovasculares o perigo é muito mais sério, pois em níveis elevados de CO, poderá levar a dores de cabeça, tonturas, perturbações da visão, redução da capacidade de trabalho e diminuição da destreza manual.
 O dióxido de enxofre (SO2) é um gás irritante para as mucosas dos olhos, nariz e garganta. A exposição em demasia a este poluente pode afetar o sistema respiratório, provocando alterações nos mecanismos de defesa dos pulmões e agravar doenças como a asma, bronquite crónica e doenças cardiovasculares já existentes. Por outro lado, o dióxido de enxofre poderá ser transformado em gotículas de acido sulfúrico o que lavará a uma maior irritação na mucosa respiratória.
 O dióxido de nitrogénio (NO2) é libertado durante a combustão a temperaturas elevadas e poderá desencadear um aumento da reatividade brônquica que se traduz muitas vezes em crise de falta de ar em indivíduos com asma. 
 O ozono (O3) poderá causar irritação do nariz, da garganta e da traqueia. E por fim o ácido cianídrico poderá provocar sintomas como confusão mental, taquicardia e respiração acelerada. 
-Por outro, a principal ameaça para a saúde resultante do fumo provém das partículas. As partículas com um diâmetro inferior a 10 μm (PM 10), poderão conduzir a situações como tosse, irritação nos olhos, nariz e garganta, até mesmo ao aparecimento de doenças pulmonares crónicas obstrutivas. Além disso, são as partículas com diâmetro inferior a 2,5 μm (PM 2,5) que provocam problemas mais graves, uma vez que estas são pequenas o suficiente para serem inaladas e entrarem mais profundamente nos pulmões, provocando assim doenças respiratórias como asma, ou até mesmo penetrar na corrente sanguínea provocando a morte (DGS,2011).
+Por outro, a principal ameaça para a saúde resultante do fumo provém das partículas. As partículas com um diâmetro inferior a 10\micro\meter (PM 10), poderão conduzir a situações como tosse, irritação nos olhos, nariz e garganta, até mesmo ao aparecimento de doenças pulmonares crónicas obstrutivas. Além disso, são as partículas com diâmetro inferior a 2.5 \micro\meter (PM 2,5) que provocam problemas mais graves, uma vez que estas são pequenas o suficiente para serem inaladas e entrarem mais profundamente nos pulmões, provocando assim doenças respiratórias como asma, ou até mesmo penetrar na corrente sanguínea provocando a morte (DGS,2011).
 Segundo a DGS é importante informar a população relativamente aos riscos associados á exposição de fumos e assim lançar medidas de prevenção. Como resposta, a direção geral de saúde lançou um comunicado no dia 17/08/2017 que foca em alguns pontos essenciais. Desta forma, a DGS recomenda á população que evite a exposição ao fumo, evitando atividades a ar livre, salienta a importância da utilização de máscaras, sempre que for inevitável a exposição ao fumo, toma continua da medicação habitual para doentes com problemas a nível respiratório e manter-se hidratado e informado [ CITATION Fra17 \l 2070 ].
 
 
-\chapter{Problemas relacionados com o excesso de calor}
+\section{Problemas relacionados com o excesso de calor}
 Como sabemos, verifica-se um maior número de incêndios durante os meses do verão, estes que são também característicos pelo facto de levarem à existência de um aumento da temperatura. Este aumento da temperatura que se verifica no verão em conjunto com o calor provocado pela ocorrência de incêndios leva à existência de problemas de saúde pública associados a essa situação.
 Apesar de todos os indivíduos possam ser afetados com o excesso de calor que se pode fazer sentir devido à ocorrência de incêndios, existem alguns grupos populacionais que estão mais sujeitos aos efeitos provocados por esse excesso de calor, são estes: “As crianças nos primeiros anos de vida, as pessoas idosas e os portadores de doenças crónicas, nomeadamente os que sofrem de afeções cardíacas, respiratórias, renais, diabetes, obesidade e doença mental” (DGS,2011).
 O excessivo calor que se pode fazer sentir quando estamos perante situações de incêndios, poderão levar há ocorrência de problemas considerados como “Emergências Médicas”. Sendo assim, as emergências médicas que poderão ser desencadeadas devido ao calor excessivo são:
@@ -159,18 +163,18 @@ Em caso de presença dos sintomas anteriormente referidos deverá: “Procurar a
 Caso se verifique a ocorrência destes sintomas, a pessoa deverá: “Procurar ajuda numa unidade de cuidados de saúde o mais rapidamente possível. Caso a pessoa sofra de problemas cardíacos ou hipertensão é necessário que a procura de ajuda médica imediata; Enquanto se espera pela prestação de cuidados de saúde, deverá ser feito arrefecimento, promover a hidratação da pessoa e o seu repouso;” (DGS,2011).
 \end{itemize}
 
-\chapter{Problemas relacionados com as falhas no abastecimento de água}
+\section{Problemas relacionados com as falhas no abastecimento de água}
 A água é um bem essencial e imprescindível na nossa vida, seja para consumo próprio ou para evitar a devastação da nossa floresta. Com a chegada dos incêndios chegam também os problemas no abastecimento de água. 
 Por vezes, ocorrem alterações na qualidade da água devido aos incêndios e ao efeito que eles provocam no meio ambiente. Dessa forma, é necessário recorrer a outros meios de abastecimento, os chamados meios alternativos, com o objetivo de não colocar em risco a saúde das pessoas que estão envolvidos neste fenómeno ambiental. A passagem facilitada da água para o subsolo devido à perda de vegetação, consequente dos incêndios, levará a um conjunto de transformações químicas, como a entrada de sedimentos e cinzas nos fluxos de água, que a irão tornar imprópria para o consumo da população e constituir um grande risco para a saúde pública.
 De forma preventiva, é necessário elaborar um conjunto de medidas alternativas às habituais, com o objetivo de contornar/reduzir os riscos para a saúde humana  (DGS,2011).
 
 
-\section{Protocolos de desinfeção da água - Medidas a incrementar}
+\subsection{Protocolos de desinfeção da água - Medidas a incrementar}
 
-\subsection{Fervura de água destinada a consumo humano}
+\subsubsection{Fervura de água destinada a consumo humano}
 Grande parte dos microrganismos patogénicos e prejudiciais para a saúde do Homem não conseguem sobreviver e proliferar em ambientes com altas temperaturas. Assim, a fervura da água contaminada é um método executado muito frequentemente e que é bastante eficiente na eliminação de bactérias, fungos, parasitas, entre outras. De seguida a água deverá ser armazenada num recipiente fechado e colocada num ambiente fresco(DGS,2011).
 
-\subsection{Desinfeção Química}
+\subsubsection{Desinfeção Química}
 A desinfeção da água é executada através de produtos à base de cloro e iodo. Normalmente, é utilizada uma lixivia comercial à escolha do consumidor para uma desinfeção adequada, desde que não contenha corantes, nem qualquer tipo de detergentes. 
 \begin{table}
 \begin{tabular}{|c||c||c|}
@@ -188,7 +192,7 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Apoios a população após incêndios}
+\chapter{Apoios a população após incêndios}
 
 \begin{enumerate}
  \item Ministério da Justiça
@@ -223,24 +227,24 @@ A desinfeção da água é executada através de produtos à base de cloro e iod
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\part{Tipos de Queimaduras} 
+\chapter{Tipos de Queimaduras} 
 Durate os incêndios, as pessoas que os cambatem, quer seja bombeiro ou civil,  estam sujeitas ao contacto da chama com a pele, podendo provocar queimaduras de diferentes graus.
 As queimaduras classificam-se de acordo com a sua profundidade e o tamanho destas.
 Na tabela 2 podemos observar os diferentes graus de queimaduras.
 
- \begin{table}
- \begin{tabular}{|c||c||c|}
+\begin{table}
+\caption{Características das queimaduras}
+\begin{tabular}{|c||c||c|}
 \hline  
    \textbf{1ºGrau}	  	&  \textbf{2ºGrau}	  &  \textbf{3ªGrau}		 \\  \hline
    Atinge a epiderme		&  Atinge a derme         &  Destruição dos tecidos \\  \hline
    Causa Vermelhidão da pele   	&  Ardor intenso	  &  Nesseçário apoio médico \\  \hline
    Não há formação de bolhas    &  Há formação de bolhas  &  A pele fica carbonizada \\  \hline
 \end{tabular}
-\caption{Características das queimaduras}
 \end{table}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\part{Reflexão crítica}
+\chapter{Reflexão crítica}
 Sendo Portugal o país europeu com mais área ardida na última década, verificou-se este ano a época mais crítica de incêndios florestais no nosso país, sendo que mais de 230 mil hectares de área arderam.
 Durante esta época de incêndios abordou-se bastante as falhas no funcionamento do Sistema Integrado de Redes de Emergência e Segurança de Portugal, que começaram no incêndio de Pedrógão Grande e repetiram-se, pelo menos, nos fogos de Alijó, Abrantes, Mealhada, Cantanhede e no distrito de Castelo Branco.
 O nosso grupo tem por opinião, que para que seja alterado a tendência de aumento das áreas ardidas serão necessárias medidas a longo-prazo, onde estas só irão ter sucesso se forem assumidas por todos, enquanto objetivo estratégico do desenvolvimento global do país.
@@ -253,7 +257,7 @@ Por fim, tendo em conta a quantidade de pessoas lesadas tanto direta como indire
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Conclusão}
+\chapter{Conclusão}
 Hoje em dia cada vez podemos observar com maior frequência a ocorrência de incêndios, onde uma considerável percentagem seja por responsabilidade das pessoas. Verificando assim que o Ser Humano acaba por se prejudicar a si próprio e aos seus chegados. Isto contando com todos os efeitos precedentes dos incêndios, tanto físicos para quem os combate e por quem é “rodeado” por estes, como também psicológicos para quem perde um próximo, para quem perde pertences como as suas casas ou até mesmo só pelas imagens que são capturadas tanto ao vivo como pela comunicação social.
 Posto isto, é importante salientar e consequentemente alertar a população afetada sobre os riscos para a saúde derivados destas catástrofes. Prevenindo assim, a ocorrência de complicações com a diminuição da recorrência a unidades de saúde. Não pondo de parte a importância da ajuda necessária às populações que acabam por ser envolvidas e prejudicadas por este fenómeno.
 Em suma, os objetivos definidos neste trabalho foram alcançados com sucesso, podendo o grupo reter informação deste fenómeno ambiental e consciencializando-se um pouco mais da realidade que são os incêndios, os seus riscos e as suas consequências devastadoras.
@@ -263,7 +267,7 @@ Em suma, os objetivos definidos neste trabalho foram alcançados com sucesso, po
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Bibliografia}
+\chapter{Bibliografia}
 
 \printbibliography
 
