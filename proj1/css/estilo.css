@@ -1,20 +1,87 @@
 .navbar{
 	background-color: #303132; 
 	color: white;
+} 
+
+
+p.ajusta{ 
+	text-align: justify;
+	text-indent: 50px;
 }
-a{
+
+
+.titulo-imagem{
+	width:100%;
+	height:auto;
+	text-transform: uppercase;
+	text-align: center;
+	color:white;
+	font-weight:700;
+	font-size: 11em;
+	background-image:url(../img/fogo3.jpg);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+/* Button */
+button.ghost{
+	width:200px;
+	height:50px;
+	margin: 10px;
+	background:white;
+	color: #DF0101;
+	border: solid 2px #DF0101;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition:0.3s;
+	transition:color 0.3s ease-out;
+	
+}
+button.ghost:hover{
+	background-color:#DF0101;
 	color: white;
 }
 
+a.principal{
 
+	background:white;
+	color: #DF0101;
+	text-transform: uppercase;
+	text-align: center;
+	line-height:60px;
+	margin: 10px;
+	text-decoration:none;
+	font-size:20px;
+	font-family: verdana;
+	letter-spacing:4px;
+	border-radius: 100px;
+	border: solid 2px #DF0101;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-transition:0.3s;
+	transition:color 0.3s ease-out;
 
-.circular-progress{
-	width: 12rem;
-	height: 12rem;
-	background: red;
-	border-radius: 50%;
-	margin: auto;
+}
+a.principal:hover{
+	background-color:#DF0101;
+	color: white;
+}
 
+textarea{
+	width:300px;
+	height:150px;
+	display: block;
 }
 
 
+/* imagens do slide*/
+
+.peopleCarouselImg img {
+  width: auto;
+  height: 600px;
+  max-height: 600px;
+}

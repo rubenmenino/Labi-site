@@ -59,16 +59,73 @@
 			<br></br>
 			<br></br>
 			
+			
+
 			<div class="cover-container pb-5">
 				<div class="cover-inner container">
-					<h1 class="jumbotron-heading"><strong>Bombeiros Aveiro</strong></h1>
-					<p class="lead">Os bombeiros de Aveiro dão-lhe as boas vindas.</p>
-					<p>
-						<a href="#contactar" class="btn btn-primary btn-lg mb-2 mr-2 ml-2">Reportar Problema</a>
-					</p>
+					<h1 class="titulo-imagem"><strong>Bombeiros Aveiro</strong></h1>
+					<h2 class="lead">Os bombeiros de Aveiro dão-lhe as boas vindas.</h2>
+					<a href="#contactar" class="principal"> > Reportar Problema < </a>
 				</div>
 			</div>
 		</section>
+			
+			<br></br>
+			<br></br>
+			
+		<section class="contact-1 center" >
+			<div class="row justify-content-md-center">
+			<div class="col col-lg-2"></div>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					
+					<div class="carousel-inner col-md-auto">
+						<div class="carousel-item peopleCarouselImg active">
+							<img class="d-block " src="img/fogo2.jpg" alt="First slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Bombeiros</h3>
+									<p>Testemidos</p>
+								</div>
+						</div>
+						<div class="carousel-item peopleCarouselImg">
+							<img class="d-block" src="img/fogo4.jpg" alt="Second slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Bombeiros</h3>
+									<p>Corajosos</p>
+								</div>
+						</div>
+						<div class="carousel-item peopleCarouselImg">
+							<img class="d-block" src="img/fogo5.jpg" alt="Third slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Bombeiros</h3>
+									<p>Soldados Firmes</p>
+								</div>
+						</div>
+					
+					
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+					</a>
+					</div>
+					
+				</div>	
+				<div class="col col-lg-2"></div>			
+			</div>
+		</section>
+
+	
+			<br></br>
+			<br></br>
+			
 			
 		<section class="content-1">
 			<div class="container">
@@ -76,9 +133,10 @@
 					<div class="col-md-6 text-center">
 						<img class="mb-4 img-fluid" src="img/bombeiros193.png" alt="bombeiros193 html" />
 					</div>
-					<div class="col-md-6 text-center text-md-left" >
-						<h2 class="mb-4 mt-4">Denuncie Incendiários</h2>
-						<p class="mb-4">Ajude-nos a minimizar os inceêdios </p>
+					<div class="col-md-1"></div>
+					<div class="col-md-5 text-center text-md-left" >
+						<h2 class="mb-4 mt-4"><br></br>Denuncie Incendiários</h2>
+						<p class="mb-4">Ajude-nos a minimizar os incêndios </p>
 					</div>
 				</div>
 			</div>
@@ -105,20 +163,25 @@
 				<div class="row contact-details">
 					<div class="col-sm-8 text-center text-md-left mb-4">
 						<h3>Reportar problema</h3>
-						<form class="contact-form mt-4">
+						<form class="contact-form mt-4" >
 							<div class="row">
 								<div class="col-md-5">
-									<input type="text" class="form-control-custom mb-4" placeholder="Nome" value="Nome">
+									<label for="nome">Nome:</label> 
+									<input id="nome" type="text" class="form-control-custom mb-4" placeholder="Digite o seu nome" />
 								</div>
 								<div class="col-md-5">
-									<input type="text" class="form-control-custom mb-4" placeholder="Email" value="Email">
+									<label for="email">Email:</label> 
+									<input id="email" type="text" class="form-control-custom mb-4" placeholder="Digite o seu email" />
 								</div>
 								<br />
 							</div>
 							<div class="row">
 								<div class="col-md-10">
-									<textarea class="form-control-custom mb-4" rows="3">Descrição Problema</textarea><br />
-									<button type="submit" class="btn btn-primary btn-lg mb-4">Enviar Mensagem</button>
+									<label for="descriçao">Descrição Problema:</label> 
+									<textarea id="descriçao" class="form-control-custom mb-4" placeholder="Digite mensagem" rows="3"></textarea>
+					
+									<button type="submit" class="ghost">Enviar Mensagem</button>
+									
 								</div> 
 							</div>
 						</form>
@@ -126,12 +189,11 @@
 					<div class="col-sm-4 text-center text-md-left">
 						<h3>Contactos</h3>
 						<h4 class="pt-4">Email</h4>
-						<p>bombeiros@bombeiros.pt</p>
+						<p>secretaria@bombeirosnovos.pt</p>
 						<h4 class="pt-2">Telefone</h4>
-						<p>+256 123 456 789</p>
+						<p>234 422 333</p>
 						<h4 class="pt-2">Morada</h4>
-						<p>1ª Rua à esquerda, código postal<br />
-						Aveiro</p>
+						<p> R. Conselheiro L. Magalhães,<br/> 3800 Aveiro</p>
 					</div>
 				</div>
 			</div>
