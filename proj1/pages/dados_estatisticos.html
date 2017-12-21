@@ -65,39 +65,112 @@
 			</section>
 			
 			<br> </br>
+			<section>
 			<div class="row">
 			  <div style="text-align: center;" class="col-12"><h1> Dados estatísticos relacionados com os incêndios</h1></div>
 			</div>
 			
 			<div class="row">
-				<div class="col-sm-8"><p>Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e GNR.
+			<div class="col-sm-1"></div>
+				<div class="col-sm-6"><p>Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e GNR.
 			Estes dados obtidos permitem a análise a diversos aspetos como as causas dos incêndios, o número de incêndios florestais e a quantidade de área ardida num determinado ano.
 			Segundo os dados obtidos podemos verificar que apenas uma ínfima percentagem de incêndios florestais é de causa natural.(Figura\ref{graf1})
 			Verifica-se também que cerca de (19%) dos incêndios têm obra de mão criminosa.
 			Relativamente as causas acidentais e por uso do fogo verificamos que tem uma grande percentagem associada (37%), estes são causados muitas vezes por negligência. É essencial que se atue ao nível da prevenção para diminuir esta percentagem, para isso é importante a divulgação de informação de modo a alertar as populações dos cuidados que devem ser tomados para a prevenção de possíveis incêndios (ICNF,2016).</p>
 				</div>
-				<div class="col-sm-4">col-sm-4</div>
+				
+				
+				<div class="col-sm-4">
+					<div id="container" style="height: 400px"></div>
+				</div>
+				<div class="col-sm-1">
+				</div>
 			</div>
+			</section>
 			
-	<div id="grafico-linhas" style="width: 600px; height: 450px;">
-		<button class="btn btn-primary" onclick="desenhaGrafico2()"> Gráfico </button>
-	</div>
-			
-	<div id="container" style="height: 400px"></div>
+			<section>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				
+				<div class="col-sm-4">
+					<div id="grafico-linhas" style="width: 600px; height: 450px;">
+						<button class="btn btn-primary" onclick="desenhaGrafico()"> Gráfico </button>
+					</div>
+		
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-4"><p>
+					Analisando o gráfico(Figura\ref{garf2}) podemos observar que o número de hectares de área ardida tem vindo a aumentar significativamente 
+					nos últimos 3 anos, sendo 2017 o 3ºano mais afetado desde 2001. Apesar de a área ardida em 2017 ter aumentado relativamente aos outros anos,
+					o número de incêndios registados tem diminuindo em média desde 2001 até 2017. Isto deve-se à maior divulgação de informação à população relativa
+					à prevenção dos incêndios, como a proibição de queimadas em determinadas alturas do ano e todos os cuidados que a população deve tomar de modo a
+					evitar estas ocorrências.
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			</section>
 	
-	<div id="grafico-linhas" style="width: 600px; height: 450px;">
-		<button class="btn btn-primary" onclick="desenhaGrafico()"> Gráfico </button>
-	</div>
-	
-	
-	<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 
 	
-	<h2>
-	<a id="circular-progress" />
-	</h2>
-	
+
 	</body>
 	  
-	  
+	<script>
+		Highcharts.chart('container', {
+		chart: {
+		 // Para ajustar o grafico
+        spacingBottom: 180,
+        spacingTop: 10,
+        spacingLeft: 10,
+        spacingRight: 10,
+
+			type: 'pie',
+			options3d: {
+				enabled: true,
+				alpha: 45,
+				beta: 0
+			}
+		},
+		title: {
+			text: 'Causas de Incêndios'
+		},
+		tooltip: {
+			pointFormat: '{.name}: <b>{point.percentage:.1f}%</b>'
+		},
+		exporting: { 
+			enabled: false
+		},
+		credits: {
+			enabled: false
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				depth: 35,
+				dataLabels: {
+					enabled: true,
+					format: '{point.name}'
+				}
+			}
+		},
+		series: [{
+			type: 'pie',
+			name: '',
+			data: [
+				['Negligência', 37],
+				{
+					name: 'Intencional',
+					y: 19,
+					sliced: true,
+					selected: true
+				},
+				['Reacendimento', 7],
+				['Natural', 2],
+				['Desconhecida', 35]
+			]
+		}]
+	});
+	</script>
+
 </html>
