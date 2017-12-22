@@ -4,11 +4,11 @@
 		<title>Incêndios</title>
 		<!--Icon-->
 		<link rel="shortcut icon" href="../img/Intelligence.ico">
-		
+
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="stylesheet" href="../css/estilo.css">
@@ -23,10 +23,10 @@
 		<script src="https://code.highcharts.com/highcharts.js"></script>
 		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
 		<script src="https://code.highcharts.com/modules/exporting.js"></script>
-		
-		
+
+
 	</head>
-	
+
 	<body>
 
 	<!--Menu Principal-->
@@ -63,15 +63,15 @@
 				</div>
 			</nav>
 			</section>
-			
+
 			<br> </br>
 			<br> </br>
-			
+
 			<section>
 			<div class="row">
 			  <div style="text-align: center;" class="col-12"><h1> Dados estatísticos relacionados com os incêndios</h1></div>
 			</div>
-			
+
 			<div class="row">
 			<div class="col-sm-1"></div>
 				<div class="col-sm-6"><p class="ajusta">Existem diversas entidades responsáveis pelo estudo estatístico dos incêndios, como o Instituto Nacional de Estatística, Proteção Civil Portugal, Instituto de conservação da natureza e das florestas e GNR.
@@ -80,8 +80,8 @@
 			Verifica-se também que cerca de (19%) dos incêndios têm obra de mão criminosa.
 			Relativamente as causas acidentais e por uso do fogo verificamos que tem uma grande percentagem associada (37%), estes são causados muitas vezes por negligência. É essencial que se atue ao nível da prevenção para diminuir esta percentagem, para isso é importante a divulgação de informação de modo a alertar as populações dos cuidados que devem ser tomados para a prevenção de possíveis incêndios (ICNF,2016).</p>
 				</div>
-				
-				
+
+
 				<div class="col-sm-4">
 					<div id="container" style="height: 400px"></div>
 				</div>
@@ -89,20 +89,20 @@
 				</div>
 			</div>
 			</section>
-			
+
 			<section>
 			<div class="row">
 				<div class="col-sm-1"></div>
-				
+
 				<div class="col-sm-4 text-center" >
 					<div id="grafico-linhas" style="width: 600px; height: 450px;">
 						<button class="ghost" onclick="desenhaGrafico()"> Gráfico </button>
 					</div>
-		
+
 				</div>
 				<div class="col-sm-1"></div>
 				<div class="col-sm-4"><p class="ajusta">
-					Analisando o gráfico(Figura\ref{garf2}) podemos observar que o número de hectares de área ardida tem vindo a aumentar significativamente 
+					Analisando o gráfico(Figura\ref{garf2}) podemos observar que o número de hectares de área ardida tem vindo a aumentar significativamente
 					nos últimos 3 anos, sendo 2017 o 3ºano mais afetado desde 2001. Apesar de a área ardida em 2017 ter aumentado relativamente aos outros anos,
 					o número de incêndios registados tem diminuindo em média desde 2001 até 2017. Isto deve-se à maior divulgação de informação à população relativa
 					à prevenção dos incêndios, como a proibição de queimadas em determinadas alturas do ano e todos os cuidados que a população deve tomar de modo a
@@ -111,12 +111,12 @@
 				<div class="col-sm-2"></div>
 			</div>
 			</section>
-	
 
-	
+
+
 
 	</body>
-	  
+
 	<script>
 		Highcharts.chart('container', {
 		chart: {
@@ -139,7 +139,7 @@
 		tooltip: {
 			pointFormat: '{.name}: <b>{point.percentage:.1f}%</b>'
 		},
-		exporting: { 
+		exporting: {
 			enabled: false
 		},
 		credits: {
