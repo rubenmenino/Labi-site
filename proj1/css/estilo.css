@@ -1,15 +1,20 @@
 .navbar{
-	background-color: #303132; 
+	background-color: #2A120A; 
 	color: white;
 } 
 
-
+/*Justificar texto*/
 p.ajusta{ 
 	text-align: justify;
 	text-indent: 50px;
 }
 
+/*Ajusta titulo*/
+.titulo{
+	text-align: center;
+}
 
+/*Titulo com omagem nas letras*/
 .titulo-imagem{
 	width:100%;
 	height:auto;
@@ -21,7 +26,6 @@ p.ajusta{
 	background-image:url(../img/fogo3.jpg);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
 }
 
 /* Button */
@@ -38,14 +42,14 @@ button.ghost{
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition:0.3s;
-	transition:color 0.3s ease-out;
-	
+	transition:color 0.3s ease-out;	
 }
 button.ghost:hover{
 	background-color:#DF0101;
 	color: white;
 }
 
+/*Button Principal*/
 a.principal{
 
 	background:white;
@@ -64,13 +68,13 @@ a.principal{
 	display: inline-block;
 	-webkit-transition:0.3s;
 	transition:color 0.3s ease-out;
-
 }
 a.principal:hover{
 	background-color:#DF0101;
 	color: white;
 }
 
+/*área de texto*/
 textarea{
 	width:300px;
 	height:150px;
@@ -79,9 +83,25 @@ textarea{
 
 
 /* imagens do slide*/
-
 .peopleCarouselImg img {
-  width: auto;
-  height: 600px;
-  max-height: 600px;
+	width: auto;
+	height: 600px;
+	max-height: 600px;
 }
+
+/*Tabela*/
+.table{
+	width: 700px;
+	height: auto;
+	text-align: center;
+}
+
+/*imagem*/
+.queimadura{
+	height: 300px;
+	width: auto;
+	
+
+}
+
+	
