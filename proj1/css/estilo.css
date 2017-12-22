@@ -1,10 +1,10 @@
 .navbar{
-	background-color: #2A120A; 
+	background-color: #2A120A;
 	color: white;
-} 
+}
 
 /*Justificar texto*/
-p.ajusta{ 
+p.ajusta{
 	text-align: justify;
 	text-indent: 50px;
 }
@@ -12,6 +12,11 @@ p.ajusta{
 /*Ajusta titulo*/
 .titulo{
 	text-align: center;
+}
+
+/*Justificar legenda*/
+p.ajusta2{ 
+	text-align: justify;
 }
 
 /*Titulo com omagem nas letras*/
@@ -42,7 +47,7 @@ button.ghost{
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition:0.3s;
-	transition:color 0.3s ease-out;	
+	transition:color 0.3s ease-out;
 }
 button.ghost:hover{
 	background-color:#DF0101;
@@ -100,8 +105,7 @@ textarea{
 .queimadura{
 	height: 300px;
 	width: auto;
-	
+
 
 }
 
-	
