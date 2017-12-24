@@ -130,51 +130,47 @@
 		<br></br>
 
 
-		<section class="content-1">
-			<div class="container">
-				<div class="row justify-center">
-					<div class="col-md-6 text-center">
-						<img class="mb-4 img-fluid" src="img/bombeiros193.png" alt="bombeiros193 html" />
-					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5 text-center text-md-left" >
-						<h2 class="mb-4 mt-4"><br></br>Em caso de perigo contactar</h2>
-						<p class="mb-4">193 – Bombeiros e Serviço Integrado de Atendimento ao Trauma em Emergência (SIATE) </p>
-						
+		<section class="content-1 numero">
+			<div class="row">
+			<div class="container conteudo">
+				
+				<div class="titulo text col-sm-8" style="color:white">
+					<h2>Em caso de incêndio contactar 112 ou 117</h2>
+				</div>
 
-						
-<!--Button to Popup -->	
-						<button type="button" class="ghost" data-toggle="modal" data-target="#exampleModal">
-						  Alerta
-						</button>
-
-						
+<!--Button to Popup -->
+				<center>
+					<button type="button" class="ghost imagem col-sm-6" style="text align:center" data-toggle="modal" data-target="#exampleModal">
+					  <b>Alerta</b>
+					</button>
+				</center>
+				</div>
 <!--Popup -->			
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">Linha 193</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-								<div class="modal-body">
-									Apenas recebemos informações sobre casos de combate e prevenção de incêndios, busca e salvamentos, atendimento pré-hospitalar, 
-									acidentes de trânsito com vítima presa em ferragens, ferimento por arma branca, afogamentos, ou qualquer ocorrência em que tenha pessoas feridas. 
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Linha 117</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
 								</div>
-								<div class="modal-footer">
-								<button type="button" class="ghost" style="width:60px" data-dismiss="modal">Close</button>
-								</div>
+							<div class="modal-body">
+								Apenas ligue para este número em caso de incêndio.
 							</div>
-						  </div>
+							<div class="modal-footer">
+							<button type="button" class="ghost" style="width:60px" data-dismiss="modal">Close</button>
+							</div>
 						</div>
-
+					  </div>
 					</div>
+				
 				</div>
 			</div>
+			
 		</section>
-
+		<br></br>
+		<br></br>
 
 
 		<section>
@@ -193,28 +189,28 @@
 		<section class="contact-1">
 			<div id="contactar" class="container">
 				<div class="row contact-details">
-					<div class="col-sm-8 text-center text-md-left mb-4">
-						<h3>Reportar problema</h3>
+					<div class="col-sm-8 text-center text-md-left ">
+						<h3>Reportar Problema</h3>
 						<form class="contact-form mt-4" >
 							<div class="row">
 								<div class="input-group input-group-sm col-md-4">
 								
 									<span class="input-group-addon mb-4" id="sizing-addon2">Nome</span>
-									<input type="text" class="form-control-custom mb-4" placeholder="Digite o seu nome" aria-label="Digite o seu nome" aria-describedby="sizing-addon2"/>
+									<input type="text" class="form-control-custom mb-4 form-control" placeholder="Digite o seu nome" aria-label="Digite o seu nome" aria-describedby="sizing-addon2"/>
 									
 									<!--<label for="nome">Nome:</label>
 									<input id="nome" type="text" class="form-control-custom mb-4" placeholder="Digite o seu nome" />-->
 								</div>
 								<div class="input-group input-group-sm col-md-4">
 									<span class="input-group-addon mb-4" id="sizing-addon2">@</span>
-									<input type="text" class="form-control-custom mb-4" placeholder="Digite o seu email" aria-label="Digite o seu email" aria-describedby="sizing-addon2"/>
+									<input type="text" class="form-control-custom mb-4 form-control" placeholder="Digite o seu email" aria-label="Digite o seu email" aria-describedby="sizing-addon2"/>
 								</div>
 								<br>
 							</div>
 							<div class="row">
-								<div class="input-group-sm col-md-4">
-									<span class="input-group-addon col-md-12" id="sizing-addon2">Descreva Problema</span>
-									<textarea class="form-control-custom mb-4" placeholder="Digite mensagem" rows="3" aria-label="Digite mensagem" aria-describedby="sizing-addon2"></textarea>
+								<div class="input-group-sm col-md-8">
+									<!--<span class="input-group-addon col-md-12" id="sizing-addon2">Descreva Problema</span>-->
+									<textarea class="form-control-custom mb-4 form-control" id="comment" placeholder="Digite mensagem" aria-label="Digite mensagem" aria-describedby="sizing-addon2"></textarea>
 
 									<button type="submit" class="ghost">Enviar Mensagem</button>
 
@@ -229,11 +225,12 @@
 						<h4 class="pt-2">Telefone</h4>
 						<p>234 422 333</p>
 						<h4 class="pt-2">Morada</h4>
-						<p> R. Conselheiro L. Magalhães,<br/> 3800 Aveiro</p>
+						<p> R. Conselheiro L. Magalhães,<br/> 3800 Aveiro</p><br>
 					</div>
 				</div>
 			</div>
 		</section>
+		<br>
 
 
 <!--Rodapé-->

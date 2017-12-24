@@ -25,7 +25,7 @@
 
 	<!--Menu Principal-->
 		<section class="cover-1 text-center">
-			<nav class="navbar <!--navbar fixed-top--> navbar-expand-lg navbar-dark navbar-custom">
+			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
 				<div class="container">
 					<img src="../img/intelligence.png" width="30" height="30" class="d-inline-block align-top"/>
 					<a class="navbar-brand" href="#">Incêndios</a>
@@ -48,10 +48,6 @@
 								  <a class="dropdown-item" href="prevençao.html">Prevenção de incêndios</a>
 								</div>
 							</li>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contactos</a>
-							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">Sobre Nós</a>
 							</li>
@@ -61,31 +57,86 @@
 			</nav>
 			</section>
 
-			
-		<div class="container"><br><br><br>
+		
+		<div class="container"><br><br><br><br><br>
 			<div class="row text-center">
 				<div class="col-sm-4">
-					<img src="../img/renato.jpg" class="fotonos" alt="fotografia do aluno Renato Valente"/>
-					<h3>Renato Valente</h3>
-					<p>Aluno do primeiro ano de Engenharia de Computadores e Telemática</p>
-					<p>Email: <a href="mailto:renatovalente@ua.pt">renatovalente5@ua.pt</a></p>
+					<div class="card" style="width: 20rem;">
+						<img class="card-img-top" src="../img/renato.jpg" alt="Renato">
+						<div class="card-body">
+						<h4 class="card-title">Renato Valente</h4>
+							<p>Aluno do primeiro ano de Engenharia de Computadores e Telemática</p>
+							<p>Email: <a href="mailto:renatovalente@ua.pt">renatovalente5@ua.pt</a></p>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Informação</a>
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4">
-					<img src="../img/ruben.jpg" class="fotonos" alt="fotografia do aluno Ruben Menino" >
-					<h3>Ruben Menino</h3>
-					<p>Aluno do primeiro ano de Engenharia de Computadores e Telemática</p>
-					<p>Email: <a href="mailto:ruben.menino@ua.pt">ruben.menino@ua.pt</a></p>
+					<div class="card" style="width: 20rem;">
+						<img class="card-img-top" src="../img/ruben.jpg" alt="Ruben">
+						<div class="card-body">
+						<h4 class="card-title">Ruben Menino</h4>
+							<p>Aluno do primeiro ano de Engenharia de Computadores e Telemática</p>
+							<p>Email: <a href="mailto:ruben.menino@ua.pt">ruben.menino@ua.pt</a></p>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Informação</a>
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4">
-					<img src="../img/prof.jpg" class="fotonos" alt="fotografia do professor João Paulo Barraca" class="img-rounded">
-					<h3 class="text-center">João Barraca</h3>
-					<p class="text-center">Docente da cadeira de Laboratórios de Informática</p>
-					<p>Email: <a href="mailto:jpbarraca@ua.pt">jpbarraca@ua.pt</a></p>
-					<p>Website: <a href="http://www.joaobarraca.com/" target="_blank">www.joaobarraca.com</a></p>
+					<div class="card" style="width: 20rem;">
+						<img class="card-img-top" src="../img/prof.jpg" alt="João Paulo Barraca">
+						<div class="card-body">
+						<h4 class="card-title">João Barraca</h4>
+							<p>Docente da cadeira de Laboratórios de Informática</p>
+							<p>Email: <a href="mailto:jpbarraca@ua.pt">jpbarraca@ua.pt</a></p>
+						<a href="http://www.joaobarraca.com/" class="btn btn-primary">Website</a>
+						</div>
+					</div>		
 				</div>
 			</div>
+			<br>
 		</div>
 		
+		
+<!--Popup do Renato-->			
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">O que eu fiz no trabalho:</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" style="width:60px" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+			
+<!--Popup do Ruben-->			
+			<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel2">O que eu fiz no trabalho:</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					<div class="modal-body">
+						.....
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" style="width:60px" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			  </div>
+			</div>
 		
 		<footer class="rodape">
 			<div class="container">
