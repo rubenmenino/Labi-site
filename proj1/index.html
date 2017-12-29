@@ -19,6 +19,14 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+		<!-- 	Mapa
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+		<script type="text/javascript" src="../javascript/mapa.js"></script> -->
+
+
+
+
 	</head>
 
 	<body>
@@ -133,7 +141,7 @@
 		<section class="content-1 numero">
 			<div class="row">
 			<div class="container conteudo">
-				
+
 				<div class="titulo text col-sm-8" style="color:white">
 					<h2>Em caso de incêndio contactar 112 ou 117</h2>
 				</div>
@@ -145,7 +153,7 @@
 					</button>
 				</center>
 				</div>
-<!--Popup -->			
+<!--Popup -->
 					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
@@ -164,17 +172,34 @@
 						</div>
 					  </div>
 					</div>
-				
+
 				</div>
 			</div>
-			
+
 		</section>
 		<br></br>
 		<br></br>
 
 
 		<section>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12110.54801322712!2d-8.658789972523973!3d40.637886619437985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23980528b86547%3A0xffe2df863b4e9055!2sBombeiros+Novos+de+Aveiro!5e0!3m2!1spt-PT!2spt!4v1513866019835" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+		<div id="map" style="width:1800px;height:500px;background:yellow"></div>
+
+		<script>
+			function myMap() {
+  			var mapCanvas = document.getElementById("map");
+  			var mapOptions = {
+    		center: new google.maps.LatLng(40.6439048, -8.6515456), zoom: 15
+  		};
+  			var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwQ3qVrfpgtIogFnDV6Lrem3Fi9VkWic&callback=myMap"></script>
+
+
+
 		</section>
 
 
@@ -194,10 +219,10 @@
 						<form class="contact-form mt-4" >
 							<div class="row">
 								<div class="input-group input-group-sm col-md-4">
-								
+
 									<span class="input-group-addon mb-4" id="sizing-addon2">Nome</span>
 									<input type="text" class="form-control-custom mb-4 form-control" placeholder="Digite o seu nome" aria-label="Digite o seu nome" aria-describedby="sizing-addon2"/>
-									
+
 									<!--<label for="nome">Nome:</label>
 									<input id="nome" type="text" class="form-control-custom mb-4" placeholder="Digite o seu nome" />-->
 								</div>
