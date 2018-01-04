@@ -18,7 +18,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+		<script type="text/javascript" src="javascript/navbar.js"></script>
 		<!-- 	Mapa
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
 		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
@@ -29,8 +29,9 @@
 
 	</head>
 
-	<body>
-	<!--Menu Principal-->
+	<body onload="navbar()">
+	
+<!--Menu Principal-->
 		<section class="cover-1 text-center">
 			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
 				<div class="container">
@@ -39,7 +40,7 @@
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent" >
 						<ul class="navbar-nav mt-2 mt-md-0">
 							<li class="nav-item active">
 								<a class="nav-link" href="#">Início</a>
@@ -66,12 +67,15 @@
 					</div>
 				</div>
 			</nav>
-
+		</section>
+<!--Fim Menu-->
 			<br></br>
 			<br></br>
 
 
-
+<!--Desemvolvimento-->
+	<!--1ªSection-->
+		<section class="cover-1 text-center">
 			<div class="cover-container pb-5">
 				<div class="cover-inner container">
 					<h1 class="titulo-imagem"><strong>Bombeiros Aveiro</strong></h1>
@@ -83,7 +87,8 @@
 
 			<br></br>
 			<br></br>
-
+			
+	<!--2ªSection-->
 		<section class="contact-1 center" >
 			<div class="row justify-content-md-center">
 			<div class="col col-lg-2"></div>
@@ -137,7 +142,7 @@
 		<br></br>
 		<br></br>
 
-
+	<!--3ªSection-->
 		<section class="content-1 numero">
 			<div class="row">
 			<div class="container conteudo">
@@ -180,9 +185,9 @@
 		<br></br>
 		<br></br>
 
-
+		
+	<!--4ªSection-->
 		<section>
-
 
 		<div id="map" style="width:1800px;height:500px;background:yellow"></div>
 
@@ -211,6 +216,7 @@
 
 		<br><br>
 
+	<!--5ªSection-->
 		<section class="contact-1">
 			<div id="contactar" class="container">
 				<div class="row contact-details">
@@ -256,22 +262,20 @@
 			</div>
 		</section>
 		<br>
-
+<!--Fim Desemvolvimento-->
 
 <!--Rodapé-->
 		<footer class="rodape">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center text-md-center mt-2 mb-3 pt-1">
-						<p class="copyright">© Copyright Bombeiros de Aveiro. Todos os direitos reservados</p>
+						<p class="copyright">&copy; Copyright Bombeiros de Aveiro. Todos os direitos reservados.</p>
 					</div>
 				</div>
 			</div>
 		</footer>
-
-
-
+<!--Fim Rodapé-->
+		
 	</body>
-
-
+	
 </html>

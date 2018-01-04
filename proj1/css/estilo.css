@@ -3,6 +3,13 @@
 	color: white;
 }
 
+/*Tipo de letra no body*/
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #46484a; 
+}
+
 /*Justificar texto*/
 p.ajusta{
 	text-align: justify;
@@ -33,7 +40,7 @@ p.ajusta2{
 	text-align: center;
 	color:white;
 	font-weight:700;
-	font-size: 11em;
+	font-size: 10em;
 	background-image:url(../img/fogo3.jpg);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -62,7 +69,6 @@ button.ghost:hover{
 
 /*Button Principal*/
 a.principal{
-
 	background:white;
 	color: #DF0101;
 	text-transform: uppercase;
@@ -109,7 +115,7 @@ textarea{
 	text-align: center;
 }
 
-/*imagem*/
+/*imagem das queimaduras*/
 .queimadura{
 	height: 300px;
 	width: auto;
@@ -128,7 +134,7 @@ textarea{
 	filter:alpha(opacity=70); 
 }
 
-/*para fazer a 3ª secção do aviso*/
+/*para fazer a 3ª secção - aviso*/
 .conteudo{
 	display:table;
 }
@@ -142,3 +148,14 @@ textarea{
 	background-color: #190B07;
 }
 
+/*Fundo do DropDouwn da navbar*/
+.dropdown-item.active{
+    color: #fff;
+    text-decoration: none;
+    background-color: #190B07;
+}
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #61210B;
+}

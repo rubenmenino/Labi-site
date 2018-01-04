@@ -27,9 +27,9 @@
 
 	</head>
 
-	<body>
+	<body onload="circularGrafico()">
 
-	<!--Menu Principal-->
+<!--Menu Principal-->
 		<section class="cover-1 text-center">
 			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
 				<div class="container">
@@ -40,15 +40,15 @@
 					</button>
 					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
 						<ul class="navbar-nav mt-2 mt-md-0">
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" href="../index.html">Início</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								  Conteúdo
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								  <a class="dropdown-item" href="#">Dados estatísticos</a>
+								  <a class="dropdown-item active" href="#">Dados estatísticos</a>
 								  <a class="dropdown-item" href="tipos_queimaduras.html">Queimaduras</a>
 								  <a class="dropdown-item" href="apoios.html">Apoios à população</a>
 								  <a class="dropdown-item" href="prevençao.html">Prevenção de incêndios</a>
@@ -62,10 +62,11 @@
 				</div>
 			</nav>
 			</section>
-
+<!--Fim Menu-->
 			<br> </br>
 			<br> </br>
-
+			
+<!--Desenvolvimento-->
 			<section>
 			<div class="row">
 			  <div class="titulo col-12"><h1> Dados estatísticos relacionados com os incêndios</h1></div>
@@ -122,77 +123,20 @@
 			</div>
 			</section>
 			<br></br>
+<!--Fim Desenvolvimento-->			
 			
+<!--Rodapé-->			
 		<footer class="rodape">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center text-md-center mt-2 mb-3 pt-1">
-						<p class="copyright">© Copyright Bombeiros de Aveiro. Todos os direitos reservados</p>
+						<p class="copyright">&copy; Copyright Bombeiros de Aveiro. Todos os direitos reservados</p>
 					</div>
 				</div>
 			</div>
 		</footer>
-
+<!--Fim Rodapé-->
+		
 	</body>
-
-
-	<!--Gráfico Circular-->
-	<script>
-		Highcharts.chart('contain', {
-		chart: {
-		 // Para ajustar o grafico
-        spacingBottom: 180,
-        spacingTop: 10,
-        spacingLeft: 10,
-        spacingRight: 10,
-
-			type: 'pie',
-			options3d: {
-				enabled: true,
-				alpha: 45,
-				beta: 0
-			}
-		},
-		title: {
-			text: 'Causas de Incêndios'
-		},
-		tooltip: {
-			pointFormat: '{.name}: <b>{point.percentage:.1f}%</b>'
-		},
-		exporting: {
-			enabled: false
-		},
-		credits: {
-			enabled: false
-		},
-		plotOptions: {
-			pie: {
-				allowPointSelect: true,
-				cursor: 'pointer',
-				depth: 35,
-				dataLabels: {
-					enabled: true,
-					format: '{point.name}'
-				}
-			}
-		},
-		series: [{
-			type: 'pie',
-			name: '',
-			data: [
-				['Negligência', 37],
-				{
-					name: 'Intencional',
-					y: 19,
-					sliced: true,
-					selected: true
-				},
-				['Reacendimento', 7],
-				['Natural', 2],
-				['Desconhecida', 35]
-			]
-		}]
-	});
-	</script>
-
+	
 </html>

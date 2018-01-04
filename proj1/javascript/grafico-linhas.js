@@ -11,7 +11,7 @@ function desenhaGrafico() {
 				"2007", "2008", "2009", "2010", "2011", "2012", "2003", "2014", "2015", "2016", "2017"]
 		},
 		series: [{
-			name: "Área ardida",
+			name: "Nº de Ocorrências",
 			data: [300, 290, 270, 240, 400, 220, 215, 170, 300, 250, 280, 230, 80, 170, 150, 160]
 		},{
 			name: "Nº de Ocorrências",
@@ -20,3 +20,61 @@ function desenhaGrafico() {
 	});
 };
 
+
+function circularGrafico() {
+	Highcharts.chart('contain', {
+		chart: {
+		 // Para ajustar o grafico
+        spacingBottom: 180,
+        spacingTop: 10,
+        spacingLeft: 10,
+        spacingRight: 10,
+
+			type: 'pie',
+			options3d: {
+				enabled: true,
+				alpha: 45,
+				beta: 0
+			}
+		},
+		title: {
+			text: 'Causas de Incêndios'
+		},
+		tooltip: {
+			pointFormat: '{.name}: <b>{point.percentage:.1f}%</b>'
+		},
+		exporting: {
+			enabled: false
+		},
+		credits: {
+			enabled: false
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				depth: 35,
+				dataLabels: {
+					enabled: true,
+					format: '{point.name}'
+				}
+			}
+		},
+		series: [{
+			type: 'pie',
+			name: '',
+			data: [
+				['Negligência', 37],
+				{
+					name: 'Intencional',
+					y: 19,
+					sliced: true,
+					selected: true
+				},
+				['Reacendimento', 7],
+				['Natural', 2],
+				['Desconhecida', 35]
+			]
+		}]
+	});
+};
