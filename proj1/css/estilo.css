@@ -7,7 +7,7 @@
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #46484a; 
+  color: #46484a;
 }
 
 /*Justificar texto*/
@@ -22,14 +22,14 @@ p.ajusta{
 }
 
 /*Justificar legenda*/
-p.ajusta2{ 
+p.ajusta2{
 	text-align: justify;
 }
 
 /*rodape*/
 .rodape{
 	color:white;
-	background:#190B07;	
+	background:#190B07;
 }
 
 /*Titulo com imagem nas letras*/
@@ -130,8 +130,8 @@ textarea{
 /*opacidade*/
 .opac{
 	background:#000;
-	opacity: 0.7; 
-	filter:alpha(opacity=70); 
+	opacity: 0.7;
+	filter:alpha(opacity=70);
 }
 
 /*para fazer a 3ª secção - aviso*/

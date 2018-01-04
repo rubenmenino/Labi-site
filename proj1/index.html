@@ -30,7 +30,7 @@
 	</head>
 
 	<body onload="navbar()">
-	
+
 <!--Menu Principal-->
 		<section class="cover-1 text-center">
 			<nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
@@ -87,7 +87,7 @@
 
 			<br></br>
 			<br></br>
-			
+
 	<!--2ªSection-->
 		<section class="contact-1 center" >
 			<div class="row justify-content-md-center">
@@ -185,26 +185,25 @@
 		<br></br>
 		<br></br>
 
-		
+
 	<!--4ªSection-->
 		<section>
-
-		<div id="map" style="width:1800px;height:500px;background:yellow"></div>
-
-		<script>
+			<div id="map" style="width:1800px;height:500px;background:yellow"></div>
+				<script>
 			function myMap() {
-  			var mapCanvas = document.getElementById("map");
-  			var mapOptions = {
-    		center: new google.maps.LatLng(40.6439048, -8.6515456), zoom: 15
-  		};
-  			var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-		</script>
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = {
+				center: new google.maps.LatLng(40.6439048, -8.6515456), zoom: 15
+			};
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+			}				var marker = new google.maps.Marker({
+			position:center,
+			})
+			</script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwQ3qVrfpgtIogFnDV6Lrem3Fi9VkWic&callback=myMap"></script>
-
-
-
+			<script
+			 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjwQ3qVrfpgtIogFnDV6Lrem3Fi9VkWic&callback=myMap">
+			</script>
 		</section>
 
 
@@ -275,7 +274,7 @@
 			</div>
 		</footer>
 <!--Fim Rodapé-->
-		
+
 	</body>
-	
+
 </html>
