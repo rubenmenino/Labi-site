@@ -1,3 +1,4 @@
+/*navbar*/
 .navbar{
 	background-color: #190B07;
 	color: white;
@@ -31,8 +32,16 @@ p.ajusta2{
 	color:white;
 	background:#190B07;
 }
+/*rodape 2*/
+.rodape2{
+	color:white;
+	background:#190B07;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-/*Titulo com imagem nas letras*/
+/*Titulo Principal com imagem nas letras*/
 .titulo-imagem{
 	width:100%;
 	height:auto;
