@@ -24,6 +24,15 @@
 		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 		<script type="text/javascript" src="../javascript/mapa.js"></script> -->
 
+		<script>
+		jQuery(document).ready(function($) {
+		    $(".scroll").click(function(event){
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+		   });
+		});
+</script>
+
 
 
 
@@ -58,7 +67,7 @@
 							</li>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#ligaçao">Contactos</a>
+								<a class="scroll nav-link" class="nav-link" href="#contactar">Contactos</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="pages/sobrenos.html">Sobre Nós</a>
